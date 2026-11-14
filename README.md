@@ -1,6 +1,6 @@
 # Chathyx
 
-> Chat with hyx —— 一个基于 Python + 原生 Android 的轻量级多人聊天应用。
+> Chat with hyx —— 一个基于 Python + 原生 Android 的轻量级多人聊天应用。 可以直接在amdroid studio中运行构建
 
 服务器端使用 Python 编写，数据全部存入 MySQL，通信全程 TLS 加密；Android 端使用原生 Java，支持多客户端同时在线，通过自定义的 TLS 帧协议通信。
 
