@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp">
+
+    <!-- 注册页面标题 -->
+    <TextView
+        android:id="@+id/tvRegisterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号注册"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp" />
+
+    <!-- 用户名输入框 -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:hint="请输入用户名"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#19334A"
+        android:textColorHint="#8A9BA8"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="12dp" />
+
+    <!-- 密码输入框外层容器 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/input_bg"
+        android:paddingStart="16dp">
+
+        <!-- 密码输入框 -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:gravity="center_vertical"
+            android:paddingStart="0dp"
+            android:paddingEnd="8dp"
+            android:singleLine="true"
+            android:textColor="#19334A"
+            android:textColorHint="#8A9BA8"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp" />
+
+        <!-- 密码显示/隐藏按钮 -->
+        <ImageView
+            android:id="@+id/ivTogglePassword"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:src="@drawable/ic_visibility_off"
+            android:visibility="gone"
+            android:scaleType="centerInside"
+            android:contentDescription="显示或隐藏密码"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <!-- 确认密码输入框外层容器 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/input_bg"
+        android:paddingStart="16dp">
+
+        <!-- 确认密码输入框 -->
+        <EditText
+            android:id="@+id/etConfirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:gravity="center_vertical"
+            android:paddingStart="0dp"
+            android:paddingEnd="8dp"
+            android:singleLine="true"
+            android:textColor="#19334A"
+            android:textColorHint="#8A9BA8"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp" />
+
+        <!-- 确认密码显示/隐藏按钮 -->
+        <ImageView
+            android:id="@+id/ivToggleConfirmPassword"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:src="@drawable/ic_visibility_off"
+            android:visibility="gone"
+            android:scaleType="centerInside"
+            android:contentDescription="显示或隐藏确认密码"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <!-- 密码规则提示 -->
+    <TextView
+        android:id="@+id/tvPasswordRule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="密码最少输入6位，且必须是字母数字组合"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="6dp" />
+
+    <!-- 创建账号按钮 -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#168BCC"
+        android:stateListAnimator="@null"
+        android:text="创建账号"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- 已有账号提示 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有账号？"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvGoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即登录"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

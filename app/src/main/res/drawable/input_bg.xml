@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+    <!--输入框背景颜色-->
+    <solid android:color="#E5E7EB"/>
+    <!--定义圆角大小-->
+    <corners
+        android:radius="16dp"
+        />
+    <!--定义圆角边框-->
+    <stroke
+        android:color="#D1D5DB"
+        android:width="1.5dp"
+        />
+    <!--定义内边距-->
+    <padding
+        android:left="16dp"
+        android:right="16dp"
+        android:bottom="8dp"
+        android:top="8dp"
+        />
+
+</shape>

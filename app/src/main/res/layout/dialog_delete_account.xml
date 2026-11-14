@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="注销后账号、好友关系与消息将永久删除，且无法恢复。"
+        android:textColor="#E53935"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/etDeletePwd"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="请输入登录密码确认"
+        android:inputType="textPassword" />
+</LinearLayout>
